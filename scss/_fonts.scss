@@ -1,0 +1,76 @@
+
+
+//IMPORT FONTS
+
+@font-face {
+     font-family: 'Gotham Light';
+     src: url('/fonts/Gotham-Light.eot');
+     src: url('/fonts/Gotham-Light') format("opentype"),
+          url('/fonts/Gotham-Light.woff') format('woff'),
+          url('/fonts/GothamLight')  format('truetype');
+
+     font-weight: 300;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'Gotham Book';
+     src: url('/fonts/Gotham-Book.eot');
+     src: url('/fonts/Gotham-Book') format("opentype"),
+          url('/fonts/Gotham-Book.woff') format('woff'),
+          url('/fonts/GothamBook')  format('truetype');
+
+     font-weight: 400;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'Gotham Bold';
+     src: url('/fonts/Gotham-Bold.eot');
+     src: url('/fonts/Gotham-Bold') format("opentype"),
+          url('/fonts/Gotham-Bold.woff') format('woff'),
+          url('/fonts/GothamBold')  format('truetype');
+
+     font-weight: 700;
+     font-style: normal;
+}
+
+// TITLES AND PARAGRAPHS
+
+h1{
+     font-family: 'Gotham Bold';
+     font-size: 2.875em; // 46px 
+     line-height: 40px;
+     color: #3E8DDD;
+ }
+ 
+ h2{
+     font-family: 'Gotham Bold';
+     font-size: 1.875em; // 30px 
+     line-height: 40px;
+ }
+ 
+ h3{
+     font-family: 'Gotham Bold';
+     font-size: 1.25em; // 20px 
+     line-height: 20px;
+ }
+ 
+ h4{
+     font-family: 'Gotham Bold';
+     font-size: 1.125em; // 18px 
+ }
+ 
+ p, span{
+     font-family: 'Gotham Book';
+     font-size: 1em; // 16px 
+ }
+ 
+ .subtext{
+     font-family: 'Gotham Book';
+     font-size: 0.625em; // 10px 
+ }
+ 
+ a{
+     text-decoration: none;
+ }

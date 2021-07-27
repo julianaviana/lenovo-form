@@ -1,0 +1,207 @@
+// SASS IMPORT
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "fonts";
+
+// RESET
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+// GERAL
+
+body{
+    color: white;
+}
+
+section{
+    background-image: url('../image/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vw;
+    max-height: 970px;
+}
+
+.centralize{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+// description content
+
+.description-section{
+    h2{
+        margin: 40px 0;
+    }
+}
+
+// forms content
+
+.form-section{
+    max-width: 600px;
+    background: white;
+    margin: 0 auto;
+    
+    .form-header {
+        overflow: hidden;
+        padding: 50px 0 10px;
+        color: #2A3C46;
+        text-align: center;
+
+        h3{
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        h4{
+            font-family: 'Gotham Light';
+            font-size: 1.0625em; //17px
+
+            a{
+                color: black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .registration-form {
+        fieldset {
+            display: none;
+        }
+    }
+    
+    .form-content {
+        padding: 0 40px 48px;
+        text-align: left;
+        transition: all .4s ease-in-out;
+        color: black;
+
+        .form-group{
+            display: flex;
+
+            input{
+                margin-top: 20px;
+                outline: 0;
+                background: #fff;
+                color: #5F5F5F;
+                border-radius: 0;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+
+                &:first-child{
+                 margin-right: 20px;
+                }
+            }
+
+            select{
+                margin-top: 20px;
+                color: #5F5F5F;
+                border-radius: 0;
+
+                -webkit-appearance: auto;
+                -moz-appearance: auto;
+                appearance: auto;
+
+                &:nth-child(1){
+                    margin-right: 20px;
+                }
+            }
+
+            input:not([type=text]):not([type=number]):not([type=submit]):invalid {
+                background-image: url("../image/asset.png");
+                background-position: calc(100% - 1em) 0.5em;
+                background-repeat: no-repeat;
+            }
+
+        }
+
+        .check{
+
+            input{
+                margin-top: 16px;
+                margin-right: 10px !important;
+            }
+
+            label{
+                margin-top: 14px;
+                font-family: 'Gotham Book';
+                font-size: 0.75em; // 12px 
+            }
+        }
+
+        button.btn {
+            width: 100%;
+            height: 50px;
+            margin: 0;
+            padding: 0 20px;
+            vertical-align: middle;
+            background: black;
+            border-radius: 0;
+            margin-top: 30px;
+
+            text-transform: uppercase;
+            font-family: 'Gotham Bold';
+            font-size: 1.25em; // 20px
+            color: white;
+        }
+
+        .input-error {
+            border-color: #DE241B;
+            color: #DE241B;
+            -webkit-box-shadow: 0px 0px 0px 1px rgba(222,36,27,1);
+            -moz-box-shadow: 0px 0px 0px 1px rgba(222,36,27,1);
+            box-shadow: 0px 0px 0px 1px rgba(222,36,27,1);
+        }
+
+        .subtext{
+            margin-top: 20px;
+        }
+
+        
+    }
+
+
+}
+
+//MOBILE 
+@media only screen and (max-width: 768px){
+
+    section {
+        background-repeat: no-repeat;
+        height: 170vw;
+        background-size: cover;
+        background-position: bottom;
+        /* max-height: 970px; */
+    }
+
+    .centralize {
+        margin: 0;
+        position: absolute;
+        transform: translate(-50%, -30%);
+    }
+
+    .description-section{
+        margin-top: 30px;
+        br{
+            display: none;
+        }
+    }
+
+
+    .form-section {
+        margin: 30px auto;
+
+        .form-content{
+            padding: 0;
+        }
+    }
+    
+
+}

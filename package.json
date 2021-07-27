@@ -1,0 +1,18 @@
+{
+  "name": "Felipe rodrigues arquitetura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/script.js",
+  "scripts": {
+    "sass": "sass scss/style.scss:css/style.css",
+    "watch": "sass scss/style.scss:css/style.css --watch",
+    "serve": "php -S localhost:8000"
+  },
+  "author": "Juliana Viana",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "jquery": "^3.6.0",
+    "sass": "^1.35.2"
+  }
+}
